@@ -18,8 +18,4 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
-
-    #Force www:
-    RewriteEngine On RewriteCond %{HTTP_HOST} ^reddflag\.com 
-    RewriteRule (.*) http://www.reddflag.com/$1 [R=301,L]
 </IfModule>
