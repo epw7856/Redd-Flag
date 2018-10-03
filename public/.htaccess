@@ -20,7 +20,6 @@
     RewriteRule ^ index.php [L]
 
     #Force www:
-    RewriteEngine on
-    RewriteCond %{HTTP_HOST} ^reddflag.com [NC]
-    RewriteRule ^(.*)$ http://www.reddflag.com/$1 [L,R=301,NC]
+    RewriteEngine On RewriteCond %{HTTP_HOST} ^reddflag\.com 
+    RewriteRule (.*) http://www.reddflag.com/$1 [R=301,L]
 </IfModule>
