@@ -79,13 +79,13 @@
       <div class="container my-auto">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
+            <h2 class="text-uppercase">
               <strong class="text-primary">Train Your Brain To Catch The Red Flags</strong>
-            </h1>
+            </h2>
             <hr>
           </div>
           <div class="col-lg-8 mx-auto">
-            <h2 class="text-faded text-primary mb-5">Attention management that measurably improves wisdom, creativity, and happiness.</h2>
+            <h3 class="text-faded text-primary mb-5">Attention management that measurably improves wisdom, creativity, and happiness.</h3>
             <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Learn More</a>
           </div>
         </div>
@@ -97,12 +97,23 @@
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading text-white">Welcome to <strong>REDD FLAG</strong> Alertness Training</h2>
-            <hr class="light my-4">
+            <!--<hr class="light my-4">-->
+            <div class="py-5" >
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="embed-responsive embed-responsive-21by9">
+                      <video src="../video/ReddFlagAd01.mp4" class="embed-responsive-item" controls="controls"> Your browser does not support HTML5 video. </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <p class="text-faded text-white mb-4">In a world that demands constant attention at every turn, reprogram your instincts
             to achieve and maintain peak awareness. Introducing <strong>REDD FLAG</strong>, a revolutionary platform constructed to improve cognitive
             attention and situational awareness through tried-and-true techniques.</p>
             <a class="btn btn-light btn-xl js-scroll-trigger" href="{{ url('/register') }}">Sign Up Now</a>
-            <p class="text-faded text-white py-sm-3">Already have an account? Log in <a class="light" href="{{ url('/login') }}">here</a>.</p>
+            <p class="text-faded text-white pt-sm-4">Already have an account? Log in <a class="light" href="{{ url('/login') }}">here</a>.</p>
           </div>
         </div>
       </div>
@@ -158,9 +169,9 @@
     <section class="p-0" id="portfolio">
       <div class="container-fluid p-0">
         <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="/img/portfolio/fullsize/1.jpg">
-              <img class="img-fluid" src="/img/portfolio/thumbnails/1.jpg" alt="">
+          <div class="col-lg-8 mx-auto my-5 text-center">
+            <a class="portfolio-box" href="/img/portfolio/1.png">
+              <img class="img-fluid" src="/img/portfolio/1.png" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -173,37 +184,6 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="/img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="/img/portfolio/thumbnails/2.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Module 1 - Fundamentals
-                  </div>
-                  <div class="project-name text-black p-4">
-                    Maintaining Attention
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="/img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="/img/portfolio/thumbnails/3.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Module 1 - Fundamentals
-                  </div>
-                  <div class="project-name text-black p-4">
-                    Utilizing Attention
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          
         </div>
       </div>
     </section>

@@ -26,7 +26,7 @@
 
   </head>
 
-  <body class="noscroll" id="page-top">
+  <body id="page-top">
 
   <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-light navbar-light w-100" id="mainNav">
@@ -64,13 +64,13 @@
       </div>
     </nav>
 
-    <header class="comingsoon h-100">
+    <header>
         <div class="container">
     <div class="py-2">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="" >Welcome, {{ Auth::user()->name }}</h3>
+          <h3>Welcome, {{ Auth::user()->name }}</h3>
         </div>
       </div>
     </div>
@@ -85,8 +85,18 @@
       </div>
     </div>
   </div>
+  </header>
+  <div class="py-2" >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <img class="img-fluid d-block p-0 m-0 mx-auto" src="../img/clock.jpg" width="300" height="60">
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-</header>
+
     <!-- Bootstrap core JavaScript -->
     <script src="/vendor/jquery/jquery.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
