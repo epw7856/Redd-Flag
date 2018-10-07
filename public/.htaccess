@@ -5,9 +5,6 @@
 
     RewriteEngine On
 
-    RewriteCond %{HTTP_HOST} ^reddflag.com [NC]
-    RewriteRule ^(.*)$ https://www.reddflag.com/$1 [L,R=301,NC]
-
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
