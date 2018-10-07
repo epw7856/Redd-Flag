@@ -5,8 +5,8 @@
 
     RewriteEngine On
 
-    RewriteCond %{HTTPS} off
-    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    RewriteCond %{HTTP_HOST} ^reddflag.com [NC]
+    RewriteRule ^(.*)$ https://www.reddflag.com/$1 [L,R=301,NC]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
