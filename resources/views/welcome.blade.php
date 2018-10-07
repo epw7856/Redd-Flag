@@ -113,7 +113,7 @@
             to achieve and maintain peak awareness. Introducing <strong>REDD FLAG</strong>, a revolutionary platform constructed to improve cognitive
             attention and situational awareness through tried-and-true techniques.</p>
             <a class="btn btn-light btn-xl js-scroll-trigger" href="{{ url('/register') }}">Sign Up Now</a>
-            <p class="text-faded text-white pt-sm-4">Already have an account? Log in <a class="light" href="{{ url('/login') }}">here</a>.</p>
+            <p class="text-faded text-white pt-4">Already have an account? Log in <a class="light" href="{{ url('/login') }}">here</a>.</p>
           </div>
         </div>
       </div>
