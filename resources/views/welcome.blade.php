@@ -213,7 +213,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 mt-3 text-center">
-          <p>© Copyright 2018 REDD FLAG - All rights reserved.</p>
+          <p>© Copyright 2018 REDD FLAG - All Rights Reserved</p>
         </div>
       </div>
     </div>
