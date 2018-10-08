@@ -194,15 +194,15 @@
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading">Contact the REDD FLAG Team</h2>
             <hr class="my-4">
-            <p class="mb-5">Have any questions or comments? Send us an email and we will get back to you as soon as possible!</p>
+            <p class="mb-5">Have any questions or comments? Give us a call today!</p>
           </div>
         </div>
         <div class="row">
           
           <div class="col-lg-12 mr-auto text-center">
-            <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
+            <i class="fas fa-phone fa-3x mb-3 sr-contact-2"></i>
             <p>
-              <a href="mailto:your-email@your-domain.com">customersupport@reddflag.com</a>
+              <a>(412) 855-3217</a>
             </p>
           </div>
         </div>
@@ -213,7 +213,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 mt-3 text-center">
-          <p>© Copyright 2018 REDD FLAGG LLC. - All rights reserved.</p>
+          <p>© Copyright 2018 REDD FLAG - All rights reserved.</p>
         </div>
       </div>
     </div>
