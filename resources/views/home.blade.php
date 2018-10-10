@@ -86,7 +86,51 @@
     </div>
   </div>
   </header>
-  <div class="py-2" >
+
+
+  <div class="p-0 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center">Want to join the Redd Flag movement? Donate today!</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-12 text-center align-items-center justify-content-center align-self-center">
+              <form class="" id="myForm" action="/thankyou" method="POST">
+              {{csrf_field()}}
+                <div class="form-group align-items-center align-self-center justify-content-center mt-2">
+                  <label class="text-center" >Enter Donation Amount</label>
+                  <div class="row">
+                  
+                      <script src="https://checkout.stripe.com/checkout.js"></script>
+                      <div class="col-md-12 align-items-center align-self-center justify-content-center d-flex"> $<div class="mx-1"></div>
+                      <input type="text" class="form-control w-50 justify-content-center align-items-center align-self-center text-justify" placeholder="USD" id="amountInDollars"> </div>
+                      <input type="hidden" id="stripeToken" name="stripeToken" />
+                      <input type="hidden" id="stripeEmail" name="stripeEmail" />
+                      <input type="hidden" id="amountInCents" name="amountInCents" />
+
+                </div>
+                </div>
+                <h6 class="hidden text-primary" id="error_explanation" name="error_explanation">Please enter a valid amount in USD!</h6>
+                <button type="submit" class="btn col-md-5 btn-primary text-lowercase text-capitalize" id="customButton" value="Pay">Pay with Card</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+  </div>
+
+  <!--<div class="py-2" >
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -94,7 +138,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
 </div>
 
     <!-- Bootstrap core JavaScript -->
@@ -108,6 +152,8 @@
 
     <!-- Custom scripts for this template -->
     <script src="/js/creative.min.js"></script>
+    <script src="{{ url('js/payment.js') }}"></script>
+
   </body>
 
 </html>
