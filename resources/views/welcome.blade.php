@@ -80,7 +80,7 @@
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h2 class="text-uppercase">
-              <strong class="text-primary">Train Your Brain To Catch The Red Flags</strong>
+              <strong class="text-primary">Train Your Brain To Catch The Redd Flags</strong>
             </h2>
             <hr>
           </div>
@@ -194,22 +194,29 @@
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading">Contact the REDD FLAG Team</h2>
             <hr class="my-4">
-            <p class="mb-5">Have any questions or comments? Give us a call today!</p>
+            <p class="mb-5">Have any questions or comments? Email or call us today!</p>
           </div>
         </div>
         <div class="row">
-          
-          <div class="col-lg-12 mr-auto text-center">
+          <div class="col-lg-3 text-center"></div>
+          <div class="col-lg-3 text-center">
+            <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
+            <p>
+              <a href="mailto:name@email.com">team@stronghold-homes.com</a>
+            </p>
+          </div>
+          <div class="col-lg-3 text-center">
             <i class="fas fa-phone fa-3x mb-3 sr-contact-2"></i>
             <p>
               <a>(412) 855-3217</a>
             </p>
           </div>
+          <div class="col-lg-3 text-center"></div>
         </div>
       </div>
     </section>
 
-  <div class="py-1 bg-dark text-white" >
+  <div class="py-5 bg-dark text-white" >
     <div class="container">
       <div class="row">
         <div class="col-md-12 mt-3 text-center">

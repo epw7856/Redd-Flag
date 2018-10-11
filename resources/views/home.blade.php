@@ -75,7 +75,7 @@
       </div>
     </div>
   </div>
-  <div class="py-5 m-0">
+  <div class="py-4 m-0">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -120,13 +120,30 @@
                 </div>
                 </div>
                 <h6 class="hidden text-primary" id="error_explanation" name="error_explanation">Please enter a valid amount in USD!</h6>
-                <button type="submit" class="btn col-md-5 btn-primary text-lowercase text-capitalize" id="customButton" value="Pay">Pay with Card</button>
+                @if(session('error'))
+                    <div class="alert alert-danger p-2">
+                      {{session('error')}}
+                    </div>
+                @endif
+                <button type="submit" class="btn col-xs-5 btn-primary text-lowercase text-capitalize" id="customButton" value="Pay">Pay with Card</button>
               </form>
+            
             </div>
           </div>
         </div>
         <div class="col-md-4"></div>
+
       </div>
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8 p-5">
+              <h5 class="text-primary text-center">Redd  Flag Kickstarter Progress</h5>
+              <div class="progress style="height: 5px;">
+              <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 1%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h6 class="text-primary text-center p-2">$0 of $15,000 raised</h6>
+          </div>
+          <div class="col-lg-2"></div>
     </div>
   </div>
 

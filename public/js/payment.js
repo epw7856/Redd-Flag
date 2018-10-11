@@ -24,6 +24,8 @@ $('#customButton').on('click', function(e) {
     handler.open({
     name: 'Redd Flag Kickstarter',
     description: 'Donation amount of  $' + displayAmount,
+    billingAddress: true,
+    zipCode: true,
     amount: amountInCents,
     });
     e.preventDefault();

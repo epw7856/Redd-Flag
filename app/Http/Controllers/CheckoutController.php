@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Stripe\Stripe;
 use Stripe\Customer;
 use Stripe\Charge;
+use App\Donations;
 
 class CheckoutController extends Controller
 {
@@ -13,8 +14,8 @@ class CheckoutController extends Controller
 
     public function charge(Request $request)
     {
-    	$amount = $request->amountInCents;
-        
+    	$amount = ($request->amountInCents) / 100.00;
+        $email = $request->stripeEmail;
         try {
 		    Stripe::setApiKey(env('STRIPE_SECRET_KEY'));
 
@@ -28,6 +29,11 @@ class CheckoutController extends Controller
 		        'amount' => $amount,
 		        'currency' => 'usd'
 		    ));
+
+		    $donation = new Donations;
+		    $donation->email = $email;
+		    $donation->saleamt = $amount;
+			$donation->save();  
 
 		    return view('thankyou');
 		} catch (\Exception $ex) {
