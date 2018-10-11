@@ -51,6 +51,9 @@
                 <a class="nav-link js-scroll-trigger" href="#portfolio">Modules</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#donate">Donate</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
               </li>
             @guest
@@ -166,8 +169,8 @@
       </div>
     </section>
 
-    <section class="p-0" id="portfolio">
-      <div class="container-fluid p-0">
+    <section class="p-0 mb-0" id="portfolio">
+      <div class="container-fluid">
         <div class="row no-gutters popup-gallery">
           <div class="col-lg-8 mx-auto my-5 text-center">
             <a class="portfolio-box" href="/img/portfolio/1.png">
@@ -188,7 +191,71 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section class="pt-1" id="donate">
+      <div class="container-fluid p-0">
+        <div class="p-0 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center">Want to join the Redd Flag movement? Donate today!</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-0">
+    <div class="container p-0">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-12 text-center align-items-center justify-content-center align-self-center">
+              <form class="" id="myForm" action="/thankyou" method="POST">
+              {{csrf_field()}}
+                <div class="form-group align-items-center align-self-center justify-content-center mt-2">
+                  <label class="text-center" >Enter Donation Amount</label>
+                  <div class="row">
+                  
+                      <script src="https://checkout.stripe.com/checkout.js"></script>
+                      <div class="col-md-12 align-items-center align-self-center justify-content-center d-flex"> $<div class="mx-1"></div>
+                      <input type="text" class="form-control w-50 justify-content-center align-items-center align-self-center text-justify" placeholder="USD" id="amountInDollars"> </div>
+                      <input type="hidden" id="stripeToken" name="stripeToken" />
+                      <input type="hidden" id="stripeEmail" name="stripeEmail" />
+                      <input type="hidden" id="amountInCents" name="amountInCents" />
+
+                </div>
+                </div>
+                <h6 class="hidden text-primary" id="error_explanation" name="error_explanation">Please enter a valid amount in USD!</h6>
+                @if(session('error'))
+                    <div class="alert alert-danger p-2">
+                      {{session('error')}}
+                    </div>
+                @endif
+                <button type="submit" class="btn col-xs-5 btn-primary text-lowercase text-capitalize" id="customButton" value="Pay">Pay with Card</button>
+              </form>
+            
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+
+      </div>
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8 pt-5">
+              <h5 class="text-primary text-center">Redd  Flag Kickstarter Progress</h5>
+              <div class="progress style="height: 10px;">
+              <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 1%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h6 class="text-primary text-center mt-2">$0 of $15,000 raised</h6>
+          </div>
+          <div class="col-lg-2"></div>
+    </div>
+  </div>
+      </div>
+    </div>
+    </section>
+
+    <section class="p-0 mb-2" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
@@ -238,6 +305,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="/js/creative.min.js"></script>
+    <script src="{{ url('js/payment.js') }}"></script>
 
   </body>
 

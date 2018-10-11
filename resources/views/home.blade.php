@@ -88,7 +88,7 @@
   </header>
 
 
-  <div class="p-0 mt-5">
+  <!--<div class="p-0 mt-5">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -147,16 +147,8 @@
     </div>
   </div>
 
-  <!--<div class="py-2" >
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <img class="img-fluid d-block p-0 m-0 mx-auto" src="../img/clock.jpg" width="300" height="60">
-        </div>
-      </div>
-    </div>
-  </div>-->
-</div>
+ 
+</div>-->
 
     <!-- Bootstrap core JavaScript -->
     <script src="/vendor/jquery/jquery.min.js"></script>

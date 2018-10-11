@@ -14,7 +14,8 @@ class CheckoutController extends Controller
 
     public function charge(Request $request)
     {
-    	$amount = ($request->amountInCents) / 100.00;
+    	$amount = $request->amountInCents;
+    	$amountDollars = $request->amountInCents;
         $email = $request->stripeEmail;
         try {
 		    Stripe::setApiKey(env('STRIPE_SECRET_KEY'));
@@ -32,12 +33,13 @@ class CheckoutController extends Controller
 
 		    $donation = new Donations;
 		    $donation->email = $email;
-		    $donation->saleamt = $amount;
-			$donation->save();  
+		    $donation->saleamt = $amountDollars;
+			$donation->save();
 
 		    return view('thankyou');
 		} catch (\Exception $ex) {
-		    return back()->with('error', 'Payment unsuccessful! Please try again');
+			return $ex;
+		    //return back()->with('error', 'Payment unsuccessful! Please try again');
 		}
     }
 

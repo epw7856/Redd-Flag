@@ -73,7 +73,7 @@
               <div class="my-4"></div>
               <hr>
               <div class="my-4"></div>
-              <a class="btn btn-primary btn-xl js-scroll-trigger" href="/home">Go Back</a>
+              <a class="btn btn-primary btn-xl js-scroll-trigger" href="/welcome">Go Back</a>
             </h1>
           </div>
         </div>
