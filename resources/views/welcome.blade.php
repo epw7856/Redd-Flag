@@ -197,7 +197,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="text-center">Want to join the Redd Flag movement? Donate today!</h2>
+          <h2 class="text-center">Join the Redd Flag movement and donate today!</h2>
         </div>
       </div>
     </div>
@@ -239,17 +239,25 @@
         <div class="col-md-4"></div>
 
       </div>
+        <div class="row mt-5">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+            <h5 class="text-black text-center">We need your help to launch this innovative brain fitness app. Your contributions will be used
+            to create the most effective content on the market, design an elegant app, and kickoff a marketing campaign to spread the word.</h5>
+          </div>
+          <div class="col-lg-2"></div>
+        </div>
         <div class="row">
           <div class="col-lg-2"></div>
-          <div class="col-lg-8 pt-5">
-              <h5 class="text-primary text-center">Redd  Flag Kickstarter Progress</h5>
+          <div class="col-lg-8 mt-5">
+              <h5 class="text-black text-center"><strong>Redd  Flag Kickstarter Progress</strong></h5>
               <div class="progress style="height: 10px;">
               <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 1%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-              <h6 class="text-primary text-center mt-2">$0 of $15,000 raised</h6>
+              <h6 class="text-black text-center mt-2">$0 of $15,000 raised</h6>
           </div>
           <div class="col-lg-2"></div>
-    </div>
+        </div>
   </div>
       </div>
     </div>
@@ -261,24 +269,17 @@
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading">Contact the REDD FLAG Team</h2>
             <hr class="my-4">
-            <p class="mb-5">Have any questions or comments? Email or call us today!</p>
+            <p class="mb-5">Have any questions or comments? Call us today!</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-3 text-center"></div>
-          <div class="col-lg-3 text-center">
-            <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
-            <p>
-              <a href="mailto:name@email.com">team@stronghold-homes.com</a>
-            </p>
-          </div>
-          <div class="col-lg-3 text-center">
+          <div class="col-lg-12 text-center">
             <i class="fas fa-phone fa-3x mb-3 sr-contact-2"></i>
             <p>
-              <a>(412) 855-3217</a>
+              <a>Alex Augenstein - (412) 855-3217</a>
             </p>
           </div>
-          <div class="col-lg-3 text-center"></div>
+          
         </div>
       </div>
     </section>
