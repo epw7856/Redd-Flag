@@ -38,7 +38,7 @@ class CheckoutController extends Controller
 
 		    return view('thankyou');
 		} catch (\Exception $ex) {
-		    return back()->with('error', 'Payment unsuccessful! Please try again');
+		    return redirect('/welcome#donate')->with('error', 'Payment unsuccessful! Please try again');
 		}
     }
 

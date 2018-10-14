@@ -192,7 +192,7 @@
     </section>
 
     <section class="pt-1" id="donate">
-      <div class="container-fluid p-0">
+      <div class="container-fluid p-3">
         <div class="p-0 mt-5">
     <div class="container">
       <div class="row">
