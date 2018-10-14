@@ -251,10 +251,10 @@
           <div class="col-lg-2"></div>
           <div class="col-lg-8 mt-5">
               <h5 class="text-black text-center"><strong>Redd  Flag Kickstarter Progress</strong></h5>
-              <div class="progress style="height: 10px;">
-              <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 1%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <h6 class="text-black text-center mt-2">$0 of $15,000 raised</h6>
+              <div class="progress active">
+                <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width:<?php echo $percentage; ?>%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+              <h6 class="text-black text-center mt-2">$@php echo number_format($total, 0) @endphp of $15,000 raised</h6>
           </div>
           <div class="col-lg-2"></div>
         </div>

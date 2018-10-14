@@ -11,20 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-
-	if (Auth::check()){
-		return Redirect::to('/home');
-
-	}
-	else{
-		return view('/welcome');
-	}
-
-});
+Route::get('/', 'WelcomeController@root');
 
 Auth::routes();
 
-Route::get('/welcome', function () { return view('/welcome'); });
+Route::get('/welcome', 'WelcomeController@welcome');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/thankyou', 'CheckoutController@charge');
