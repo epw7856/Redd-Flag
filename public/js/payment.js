@@ -1,6 +1,5 @@
 var handler = StripeCheckout.configure({
-  //key: "{{ env('STRIPE_KEY') }}",
-  key: 'pk_test_jiVphCHRqV7XZaZDH6PA0XY9',
+  key: 'pk_live_zgpVIF3W55iH5APbrcWnZ2q8',
   image: '../img/ReddFlagLogo.png',
   token: function(token) {
     $("#stripeToken").val(token.id);
