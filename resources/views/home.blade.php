@@ -24,6 +24,10 @@
     <!-- Custom styles for this template -->
     <link href="/css/creative.css" rel="stylesheet">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128101724-1"></script>
+    <script src="{{ url('js/googleanalytics.js') }}"></script>
+
   </head>
 
   <body id="page-top">
